@@ -1,0 +1,35 @@
+@api = http://localhost:3000/products
+
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "teclado",
+    "description": "teclado janus",
+    "quantity": "35"
+}
+
+### TRAER TODOS LOS PRODUCTOS
+GET {{api}}
+
+### BUSCAR PRODUCTO POR ID
+GET {{api}}/5
+
+
+### Elinando un producto
+DELETE {{api}}/6
+
+
+### ACTUALIZAR un producto
+PUT {{api}}/7
+Content-Type: application/json
+
+{
+    "name": "teclado EDITADO",
+    "description": "teclado janus EDITADO",
+    "quantity": "36"
+}
+
+### Contar productos
+GET {{api}}/count
